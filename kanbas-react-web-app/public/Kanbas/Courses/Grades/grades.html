@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Grades</title>
+   </head>
+   <body>
+    <table>
+        <tbody>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Account/Profile/index.html">Account</a> 
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Course</a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a> 
+                </li>
+                <li>
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Studio</a> 
+                </li>
+                <li>
+                    <a href="#">Commons</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+
+        </td>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Modules</a>
+                </li>
+                <li>
+                    <a href="#">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Quizzes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/grades.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Announcements</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Syllabus</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Settings/details.html">Settings</a>
+                </li>
+            </ul>
+        </td>
+           <td valign="top"><br/>
+            <select id="publish-choice">
+              <option value="Gradebook">Gradebook</option> 
+            </select>
+            <button>Import</button>
+            <select id="publish-choice">
+               <option value="Export">Export</option> 
+             </select>
+            <button>Configure</button>
+         <form id="text-fields">
+        <h2>Student Names</h2>
+        <input id="student-name" placeholder="Search Students"/><br/>
+        <h2>Assignment Names</h2>
+        <input id=“assignment-name" placeholder="Search Assignments"/><br/>
+         </form><br/>
+         <button>Apply Filter</button><br/><br/>
+         <table border="1" width="100%">
+            <thead>
+            <tr style="height:40px">
+               <th style="width: 150px;">Student Name</th>
+               <th style="width: 100px;">A1 SETUP Out of 100</th>
+               <th style="width: 100px;">A2 HTML Out of 100</th>
+               <th style="width: 80px;">A3 CSS Out of 100</th>
+               <th style="width: 130px;">A4 BOOTSTRAP Out of 100</th>
+            </tr>
+            </thead>
+            <tbody style="text-align: center">
+            <tr>
+               <td>Sean Yuan</td>
+               <td>98</td>
+               <td>94</td>
+               <td>85</td>
+               <td>96</td>
+            </tr>
+            <tr>
+               <td>Han Solo</td>
+               <td>        
+                    <input id=“assignment-name" placeholder="98" size="5" style="text-align: center"/>
+               </td>
+               <td>88</td>
+               <td>100</td>
+               <td>93</td>
+            </tr>
+            <tr>
+               <td>Luke Skywalker</td>
+               <td>93</td>
+               <td>88</td>
+               <td>95</td>
+               <td>
+                    <input id=“assignment-name" placeholder="99" size="5" style="text-align: center"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Luke Skywalker</td>
+                <td>93</td>
+                <td><input id=“assignment-name" placeholder="92" size="5" style="text-align: center" /></td>
+                <td>95</td>
+                <td>98</td>
+            </tr>
+            </tbody>
+         </table>
+         </td>
+         </tr>
+      </table>
+   </body>
+</html>

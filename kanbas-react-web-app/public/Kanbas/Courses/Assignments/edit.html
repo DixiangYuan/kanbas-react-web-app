@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Assignment Edit</title>
+   </head>
+   <body>
+    <table>
+        <tbody>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Account/Profile/index.html">Account</a> 
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Course</a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a> 
+                </li>
+                <li>
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Studio</a> 
+                </li>
+                <li>
+                    <a href="#">Commons</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+
+        </td>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Modules</a>
+                </li>
+                <li>
+                    <a href="#">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Quizzes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/grades.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Announcements</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Syllabus</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Settings/details.html">Settings</a>
+                </li>
+            </ul>
+        </td>
+
+           <td valign="top"><br/>
+                <select id="Grader">
+                    <option value="SpeedGrader">Speed Grader</option>
+                    <option value="Duplicate">Duplicate</option> 
+                    <option value="Delete">Delete</option> 
+                    <option value="Move">Move To...</option>
+                    <option value="Send">Send To...</option>
+                    <option value="Copy">Copy To...</option>
+                    <option value="Share">Share to Commons</option> 
+                  </select>
+                  <hr>
+                
+            <h2>Assignment Name</h2>
+            <input type="text" id="assignment-name" value="A1 - ENV + HTML"/> <br/> <br/>
+            <textarea cols="20" rows="2">This is the assignment desciption.</textarea> <br/> <br/>
+            Points <br/>
+            <input type="text" id="points" value="100"/> <br/> <br/>
+
+            Assignment Group<br/>
+            <select>
+                <option value="Assignments">ASSIGNMENTS</option>
+            </select><br/><br/>
+            
+            Display Grade as<br/>
+            <select>
+                <option value="Percentage">Percentage</option>
+            </select><br/><br/>
+
+            Submission Type<br/>
+            <select>
+                <option value="Online">Online</option>
+                <option value="InPerson">In Person</option>
+                <option value="Other">Other options</option>
+            </select><br/><br/>
+
+            Online Entry Options<br/>
+            <input type="checkbox" value="TEXT"
+                name="check-entry" id="chkbox-text"/>
+            <label for="chkbox-text">Text Entry</label><br/>
+            <input type="checkbox" value="WEB"
+                name="check-entry" id="chkbox-web"/>
+            <label for="chkbox-web">Website URL</label><br/>
+            <input type="checkbox" value="MEDIA"
+                name="check-entry" id="chkbox-media"/>
+            <label for="chkbox-media">Media Recordings</label><br/>
+            <input type="checkbox" value="ANNOTATION"
+                name="check-entry" id="chkbox-annotation"/>
+            <label for="chkbox-annotation">Student Annotation</label><br/>
+            <input type="checkbox" value="FILE"
+                name="check-entry" id="chkbox-file"/>
+            <label for="chkbox-file">File Uploads</label><br/><br/>
+
+            Submission Attempts<br/>
+            <select>
+                <option value="Unlimited">Online</option>
+            </select><br/><br/>
+
+            Plagiarism Review<br/>
+            <select>
+                <option value="None">None</option>
+                <option value="Check">Check</option>
+            </select><br/><br/>
+
+
+            Group Assignment<br/>
+            <input type="checkbox" value="GROUP"
+                name="check-group" id="chkbox-group"/>
+            <label for="chkbox-group">This is a group assignment</label><br/><br/>
+            
+            Peer Reviews<br/>
+            <input type="checkbox" value="PEER"
+                name="check-entry" id="chkbox-peer"/>
+            <label for="chkbox-peer">Require Peer Reviews</label><br/><br/>
+            
+            Assign<br/>
+            Assign to<br/>
+            <input type="text" id="points" value="Everyone"/> <br/> <br/>
+
+            <form>
+                <label for="date">Due</label><br/>
+                <input type="date" id="date" name="date" value="2021-01-01">
+            </form><br/>
+
+            <form>
+                <label for="date">Avaliable form</label><br/>
+                <input type="date" id="date" name="date" value="2021-01-01">
+            </form><br/>
+
+            <form>
+                <label for="date">Until</label><br/>
+                <input type="date" id="date" name="date" value="2021-01-01">
+            </form><br/>
+
+            <button onclick="window.location.href = '/Kanbas/Courses/Assignments/index.html';">cancel</button>
+            <button onclick="window.location.href = '/Kanbas/Courses/Assignments/index.html';">save</button>
+        </td>
+        </tr>
+        </table>
+
+   </body>
+</html>

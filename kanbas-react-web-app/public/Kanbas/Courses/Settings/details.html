@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <title>Settings</title>
+   </head>
+   <body>
+    <table>
+        <tbody>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Account/Profile/index.html">Account</a> 
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Course</a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a> 
+                </li>
+                <li>
+                    <a href="#">Inbox</a>
+                </li>
+                <li>
+                    <a href="#">History</a>
+                </li>
+                <li>
+                    <a href="#">Studio</a> 
+                </li>
+                <li>
+                    <a href="#">Commons</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+            </ul>
+
+        </td>
+        <td valign="top">
+            <ul>
+                <li>
+                    <a href="/Kanbas/Courses/Home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Modules</a>
+                </li>
+                <li>
+                    <a href="#">Piazza</a>
+                </li>
+                <li>
+                    <a href="#">Zoom Meetings</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Assignments/index.html">Assignments</a>
+                </li>
+                <li>
+                    <a href="#">Quizzes</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Grades/grades.html">Grades</a>
+                </li>
+                <li>
+                    <a href="#">People</a>
+                </li>
+                <li>
+                    <a href="#">Panopto Video</a>
+                </li>
+                <li>
+                    <a href="#">Discussions</a>
+                </li>
+                <li>
+                    <a href="#">Announcements</a>
+                </li>
+                <li>
+                    <a href="#">Pages</a>
+                </li>
+                <li>
+                    <a href="#">Files</a>
+                </li>
+                <li>
+                    <a href="#">Rubrics</a>
+                </li>
+                <li>
+                    <a href="#">Outcomes</a>
+                </li>
+                <li>
+                    <a href="#">Collaborations</a>
+                </li>
+                <li>
+                    <a href="#">Syllabus</a>
+                </li>
+                <li>
+                    <a href="/Kanbas/Courses/Settings/details.html">Settings</a>
+                </li>
+            </ul>
+        </td>
+            <td valign="top">
+                <table border="1">
+                    <tr>
+                        <td width="120px">
+                            <a href="/Kanbas/Courses/Settings/details.html">Course Details</a>
+                        </td>
+                        <td width="120px">
+                            <a href="#">Sections</a>
+                        </td>
+                        <td width="120px">
+                            <a href="/Kanbas/Courses/Settings/navigation.html">Navigation</a>
+                        </td>
+                        <td width="120px">
+                            <a href="#">App</a>
+                        </td>
+                        <td width="120px">
+                            <a href="#">Feature Options</a>
+                        </td>
+                        <td width="120px">
+                            <a href="#">Integrations</a>
+                        </td>
+                    </tr>
+                </table>
+                <h1>Course Details</h1>
+                <table>
+                    <tr>
+                        <td>Image</td>
+                        <td>
+                                <input type="file" id="img" name="img">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Name:</td>
+                        <td>
+                            CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Course Code:</td>
+                        <td>
+                            CS4550.12631.202410
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Blueprint Course:</td>
+                        <td>
+                            No
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Courde Template:</td>
+                        <td>
+                            <input type="checkbox" value="TEMPLATE"
+                                name="check-course-template" id="chkbox-template"/>
+                            <label for="chkbox-template">Enable course as a Course Template</label> 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Time Zone:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    Eastern Time (US & Canada) (-05:00/-04:00)
+                                </option>
+                            </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>SIS ID:</td>
+                        <td>
+                            CS4550.12631.202410
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Subaccount:</td>
+                        <td>
+                            <a href="#">CS Undergrad</a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Term:</td>
+                        <td>
+                            202410_1 Fall 2023 SemesterFull Term
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">Participation:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    Term
+                                </option>
+                            </select><br/>
+                            Course participation is limited to term start and end dats.<br/>
+                            Start<br/>
+                            <input type="date"><br/>
+                            End<br/>
+                            <input type="date"><br/>
+                            <input type="checkbox" value="Restrict students from viewing course before term start date"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Restrict students from viewing course before term start date</label> <br/>
+                            <input type="checkbox" value="Restrict students from viewing course after term end date"
+                            name="check-restriction" id="chkbox-after-end"/>
+                            <label for="chkbox-template">Restrict students from viewing course after term end date</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">Default due time:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    Eastern Time (US & Canada) (-05:00/-04:00)
+                                </option>
+                            </select><br/>
+                            This infulences the user interface for setting due dates. It does not change the time<br/>
+                                due for any exitsting assignments.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">Language:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    Not set (user-configurable, defaults to English (Unit)
+                                </option>
+                            </select><br/>
+                            This will override any user/system language preferences. This is only recommended<br/> for foreign language assignments.
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>File Storage:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    10000 megabytes
+                                </option>
+                            </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Large Course:</td>
+                        <td>
+                            <input type="checkbox" value="Large Course"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Launch SpeedGrader Filtered by Student Group</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Grading Scheme:</td>
+                        <td>
+                            <input type="checkbox" value="Large Course"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Enable course grading scheme</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>License:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    Private(Copyrighted)
+                                </option>
+                            </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>File Copyright:</td>
+                        <td>
+                            <input type="checkbox" value="Large Course"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Copyright and licese information must be procided for filrs before they are publiched.</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td valign="top">Visibility:</td>
+                        <td>
+                            If you need to make your course public please contact your administrator/support<br/>
+                            <select>
+                                <option>
+                                    Course
+                                </option>
+                            </select><br/>
+                            <input type="checkbox" value="Large Course"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Include this course in the public course index</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Format:</td>
+                        <td>
+                            <select>
+                                <option>
+                                    On-Campus
+                                </option>
+                            </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Mastery Paths:</td>
+                        <td>
+                            <input type="checkbox" value="Large Course"
+                            name="check-restriction" id="chkbox-before-start"/>
+                            <label for="chkbox-template">Enable individual learning paths for students based on assessment</label> <br/>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Description:</td>
+                        <td>
+                                <textarea cols="30" rows="10"></textarea><br />
+                             <a href="#">more options</a>
+                        </td>
+                     </tr>
+                </table>
+                <button>Update Course Details</button>
+            </td>
+        </table>
+   </body>
+</html>
