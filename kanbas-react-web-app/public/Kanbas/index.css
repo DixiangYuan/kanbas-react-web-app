@@ -21,12 +21,6 @@ code {
   flex-grow: 1;
 }
 
-.wd-navigation-fixed-width {
-  width: 100px;
-  background-color: black;
-  margin-right:10px;
-}
-
 .wd-fixed-width {
   width: 150px;
 }
@@ -340,4 +334,13 @@ li.list-group-item.wd-sub-item {
 
 .wd-list-align-left li{
   text-align: left;
+}
+
+
+/* --------------------------------------------------------- */
+
+.wd-navigation-fixed-width {
+  width: 100px;
+  background-color: black;
+  margin-right:10px;
 }

@@ -1,0 +1,15 @@
+.list-group-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background: black !important; /* Set the background to black for all items */
+  }
+  
+  .list-group-item .active {
+    background: white !important; /* Set the background to white for the active item */
+    color: red !important; /* Set the color to red for the active item */
+  }
+  .list-group-item .inactive {
+    background-color: black;
+    color: blue;
+  }
