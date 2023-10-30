@@ -2,66 +2,114 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useSelector, useDispatch } from "react-redux";
+import { addAssignment, deleteAssignment, updateAssignment, setAssignment } from "./assignmentsReducer";
 import {
-    faEllipsisV,
-    faPlus,
-    faAngleDown,
-    faCheckCircle,
-    faPencilSquare
-  } from "@fortawesome/free-solid-svg-icons";
+  faEllipsisV,
+  faPlus,
+  faAngleDown,
+  faCheckCircle,
+  faPencilSquare
+} from "@fortawesome/free-solid-svg-icons";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+  // const assignments = db.assignments;
+  // const courseAssignments = assignments.filter(
+  //   (assignment) => assignment.course === courseId);
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  const assignment = useSelector((state) => state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
   return (
     <div className="col-10">
-     
-                    <div class="row">
-                        <div id="student-name" class="col"><input type="text" class="form-control"
-                                placeholder="Search for Assignment"></input></div>
-                        <div class="col"></div>
-                        <div class="col">
-                            <div class="float-end">
-                                <button class="btn btn-secondary float-end wd-additional-margin">
-                                <FontAwesomeIcon className="" icon={faEllipsisV} />
-                                </button>
-                                <button class="btn btn-danger float-end wd-additional-margin">
-                                <FontAwesomeIcon className="" icon={faPlus} />
-                                &nbsp;Assignment</button>
-                                <button class="btn btn-secondary float-end wd-additional-margin">
-                                <FontAwesomeIcon className="" icon={faPlus} />
-                                &nbsp;Group</button>
-                            </div>
 
-                        </div>
-                    </div>
-                    <hr></hr>
-      <div className="list-group">
-        <li  className="list-group-item list-group-item-secondary wd-no-margin">
-                        <div className="row">
-                            
-                            <div className="wd-title col"> <FontAwesomeIcon className="" icon={faEllipsisV} />
-                            <FontAwesomeIcon className="" icon={faAngleDown} />
-                            &nbsp;&nbsp;Assignments </div>
-                            <div className="float-end col-2">&nbsp;40% of
-    Total&nbsp;&nbsp;<FontAwesomeIcon className="" icon={faPlus} />&nbsp;
-    <FontAwesomeIcon className="" icon={faEllipsisV} /></div>
-    </div>
-                            
-                        </li>
-        {courseAssignments.map((assignment) => (
+      <div class="row">
+        <div id="student-name" class="col"><input type="text" class="form-control"
+          placeholder="Search for Assignment"></input></div>
+        <div class="col"></div>
+        <div class="col">
+          <div class="float-end">
+            <button class="btn btn-secondary float-end wd-additional-margin">
+              <FontAwesomeIcon className="" icon={faEllipsisV} />
+            </button>
+            <button class="btn btn-danger float-end wd-additional-margin">
+              <FontAwesomeIcon className="" icon={faPlus} />
+              &nbsp;Assignment</button>
+            <button class="btn btn-secondary float-end wd-additional-margin">
+              <FontAwesomeIcon className="" icon={faPlus} />
+              &nbsp;Group</button>
+          </div>
+
+        </div>
+      </div>
+      <hr></hr>
+      <ul className="list-group">
+      <li className="list-group-item">
+        <button
+          onClick={() => dispatch(addAssignment({ ...assignment, course: courseId }))}>
+Add
+        </button>
+        <button
+          onClick={() => dispatch(updateAssignment(assignment))}>
+Update
+        </button>
+        <input
+          value={assignment.name}
+          onChange={(e) =>
+            dispatch(setAssignment({ ...assignment, name: e.target.value }))
+          }/>
+        <textarea
+          value={assignment.description}
+          onChange={(e) =>
+            dispatch(setAssignment({ ...assignment, description: e.target.value }))
+}/> </li>
+        <li className="list-group-item list-group-item-secondary wd-no-margin">
+          <div className="row">
+
+            <div className="wd-title col"> <FontAwesomeIcon className="" icon={faEllipsisV} />
+              <FontAwesomeIcon className="" icon={faAngleDown} />
+              &nbsp;&nbsp;Assignments </div>
+            <div className="float-end col-2">&nbsp;40% of
+              Total&nbsp;&nbsp;<FontAwesomeIcon className="" icon={faPlus} />&nbsp;
+              <FontAwesomeIcon className="" icon={faEllipsisV} /></div>
+          </div>
+
+        </li>
+
+{assignments
+        .filter((assignment) => assignment.course === courseId)
+        .map((assignment, index) => (
+          <div>
+              <Link
+            key={assignment._id}
+            to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+            className="list-group-item"><FontAwesomeIcon className="" icon={faEllipsisV} />&nbsp;<FontAwesomeIcon className="wd-check-icon" icon={faPencilSquare} />
+            &nbsp;&nbsp;{assignment.title}<FontAwesomeIcon className="float-end" icon={faEllipsisV} />
+            <FontAwesomeIcon className="float-end wd-check-icon" icon={faCheckCircle} />
+          </Link>
+          <button
+          onClick={() => dispatch(setAssignment(assignment))}>
+Edit
+        </button>
+        <button
+          onClick={() => dispatch(deleteAssignment(assignment._id))}>
+          Delete
+          </button>
+          </div>
+))}
+        {/* {courseAssignments.map((assignment) => (
           <Link
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
             className="list-group-item"><FontAwesomeIcon className="" icon={faEllipsisV} />&nbsp;<FontAwesomeIcon className="wd-check-icon" icon={faPencilSquare} />
             &nbsp;&nbsp;{assignment.title}<FontAwesomeIcon className="float-end" icon={faEllipsisV} />
             <FontAwesomeIcon className="float-end wd-check-icon" icon={faCheckCircle} />
-</Link>
-))} </div>
-</div>
-); }
+          </Link>
+        ))}  */}
+      </ul>
+    </div>
+  );
+}
 export default Assignments;
 
 {/* <li class="list-group-item list-group-item-secondary ">
