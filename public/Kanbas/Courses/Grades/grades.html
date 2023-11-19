@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+    <link href="../../index.css" rel="stylesheet" />
+    <link
+        href="../../../vendors/fontawesome/css/font-awesome.css"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-navigation-fixed-width">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="../../../images/neu_logo.png" alt="..." width="80px">
+                </li>
+                <li>
+                    <a href="../../Account/Profile/index.html"><i class="fa fa-user-circle-o"
+                            aria-hidden="true"></i></br>
+                        Account</a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i></br>
+                        Dashboard</a>
+                </li>
+                <li class="wd-active">
+                    <a href="../../Courses/Home/home.html"><i class="fa fa-book" aria-hidden="true"></i></br>
+                        Course</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i></br>
+                        Calendar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-inbox" aria-hidden="true"></i></br>Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></br>
+                        History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i></br>
+                        Studio</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></br>
+                        Commons</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></br>
+                        Help</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wd-main-page">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item wd-link" class="wd-link ">
+                        <i class="fa fa-bars wd-red-icon fa-lg" aria-hidden="true"></i>&nbsp; &nbsp;
+                        CS4550.12631.202410</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+            <hr />
+            <div class="wd-flex-row-container">
+                <div class="wd-secondary-fixed-width">
+                    <ul class="wd-second-navigation">
+                        <li>
+                            <a href="../Home/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li>
+                            <a href="../Assignments/index.html">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="../Grades/grades.html" class="wd-active">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="../Settings/details.html">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col">
+                            <div class="float-end">
+                                <button class="btn btn-secondary float-end mx-1">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-secondary float-end mx-1">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    Export
+                                </button>
+                                <button class="btn btn-secondary float-end mx-1">
+                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                    Import</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="name" class="fw-bold form-label">Student Names</label>
+                            <input type="text" class="form-control" id="name" placeholder="Search students">
+                        </div>
+                        <div class="col-6">
+                            <label for="assignment-name" class="form-label fw-bold">Assignment Names</label>
+                            <input type="text" class="form-control" id="assignment-name"
+                                placeholder="Search Assignments">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mt-3">
+                            <button class="btn btn-secondary">
+                                <i class="fa fa-filter fa-lg"></i>
+                                Apply Filters</button>
+                        </div>
+                    </div>
+
+                    <div class="row" width="1000px">
+                        <div class="col table-responsive">
+
+                            <table class="table table-striped table-bordered mt-2">
+                                <thead>
+                                    <th>Student Name</th>
+                                    <th>A1 - HTML</th>
+                                    <th>A2 - CSS</th>
+                                    <th>A3 - JS</th>
+                                    <th>A4 - PHP</th>
+                                    <th>A5 - SQL</th>
+                                    <th>A6 - React</th>
+                                    <th>A7 - Node</th>
+                                    <th>A8 - Express</th>
+                                    <th>A9 - MongoDB</th>
+                                    <th>A10 - Mongoose</th>
+                                    <th>A11 - Redux</th>
+                                    <th>Q1</th>
+                                    <th>Q2</th>
+                                    <th>Q3</th>
+                                    <th>Q4</th>
+                                    <th>Q5</th>
+                                    <th>Q6</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bob Dylan</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bob Bryant</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kobe Dylan</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kobe Bryant</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bob Dylan</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bob Bryant</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kobe Dylan</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kobe Bryant</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td><input type="text" value="90%" size="6" style="text-align: center"></td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bob Dylan</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

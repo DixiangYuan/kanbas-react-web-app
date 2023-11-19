@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link href="../../index.css" rel="stylesheet" />
+    <link
+        href="../../../vendors/fontawesome/css/font-awesome.css"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="wd-flex-row-container">
+        <div class="wd-navigation-fixed-width">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="../../../images/neu_logo.png" alt="..." width="80px">
+                </li>
+                <li>
+                    <a href="../../Account/Profile/index.html"><i class="fa fa-user-circle-o"
+                            aria-hidden="true"></i></br>
+                        Account</a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-tachometer" aria-hidden="true"></i></br>
+                        Dashboard</a>
+                </li>
+                <li class="wd-active">
+                    <a href="../../Courses/Home/home.html"><i class="fa fa-book" aria-hidden="true"></i></br>
+                        Course</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-calendar" aria-hidden="true"></i></br>
+                        Calendar</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-inbox" aria-hidden="true"></i></br>Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></br>
+                        History</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i></br>
+                        Studio</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></br>
+                        Commons</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></br>
+                        Help</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="wd-main-page">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item wd-link" class="wd-link ">
+                        <i class="fa fa-bars wd-red-icon fa-lg" aria-hidden="true"></i>&nbsp; &nbsp;
+                        CS4550.12631.202410</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    <li class="breadcrumb-item active" aria-current="page">A1 ENV + HTML</li>
+                </ol>
+            </nav>
+            <hr />
+            <div class="wd-flex-row-container">
+                <div class="wd-secondary-fixed-width">
+                    <ul class="wd-second-navigation">
+                        <li>
+                            <a href="../Home/home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Modules</a>
+                        </li>
+                        <li>
+                            <a href="#">Piazza</a>
+                        </li>
+                        <li>
+                            <a href="#">Zoom Meetings</a>
+                        </li>
+                        <li class="wd-active">
+                            <a href="../Assignments/index.html" class="wd-active">Assignments</a>
+                        </li>
+                        <li>
+                            <a href="#">Quizzes</a>
+                        </li>
+                        <li>
+                            <a href="../Grades/grades.html">Grades</a>
+                        </li>
+                        <li>
+                            <a href="#">People</a>
+                        </li>
+                        <li>
+                            <a href="#">Panopto Video</a>
+                        </li>
+                        <li>
+                            <a href="#">Discussions</a>
+                        </li>
+                        <li>
+                            <a href="#">Announcements</a>
+                        </li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Files</a>
+                        </li>
+                        <li>
+                            <a href="#">Rubrics</a>
+                        </li>
+                        <li>
+                            <a href="#">Outcomes</a>
+                        </li>
+                        <li>
+                            <a href="#">Collaborations</a>
+                        </li>
+                        <li>
+                            <a href="#">Syllabus</a>
+                        </li>
+                        <li>
+                            <a href="../Settings/details.html">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div style="width: 100%;" class="wd-main-content">
+                    <div class="row">
+                        <div class="col">
+                            <div class="float-end">
+                                <button class="btn btn-secondary float-end wd-additional-margin">
+                                    <i class="fa fa-ellipsis-v float-end wd-assignment-icon"></i>
+                                </button>
+                            </div>
+                            <div class="float-end">
+                                <i class="fa fa-check-circle float-end wd-check-icon"
+                                    style="font-size: larger; font-weight: bold; align-items: center; padding: 5px;">&nbsp;&nbsp;Published</i>
+                                </i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <select id="Grader">
+                    <option value="SpeedGrader">Speed Grader</option>
+                    <option value="Duplicate">Duplicate</option>
+                    <option value="Delete">Delete</option>
+                    <option value="Move">Move To...</option>
+                    <option value="Send">Send To...</option>
+                    <option value="Copy">Copy To...</option>
+                    <option value="Share">Share to Commons</option>
+                </select> -->
+                    <hr>
+
+                    <div class="mb-3">
+                        <label for="assignment-name" class="form-label wd-form-label">Assignment Name</label>
+                        <input type="email" class="form-control" id="assignment-name" value="A1 - ENV + HTML">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="assignment-description" rows="5">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+                        </textarea>
+                    </div>
+
+                    <div class="row g-3 align-items-center  wd-form-margin">
+                        <div class="col-2  text-end">
+                            <label for="inputPassword6" class="col-form-label">Points</label>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="inputPassword6" class="form-control" value="A1 - ENV + HTML">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center wd-form-margin">
+                        <div class="col-2  text-end">
+                            <label for="inputPassword6" class="col-form-label">Assignment Group</label>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-select">
+                                <option value="Percentage">ASSIGNMENTS</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center  wd-form-margin">
+                        <div class="col-2  text-end">
+                            <label for="inputPassword6" class="col-form-label">Display Grade as</label>
+                        </div>
+                        <div class="col-6">
+                            <select class="form-select">
+                                <option value="Percentage">Percentage</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center wd-form-margin">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-6">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label for="flexCheckChecked">Do not count this assignment towards the final grade</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 align-items-center wd-form-margin">
+
+                        <div class="col-2  text-end" style="height: auto;">
+                            <label for="inputPassword6" class="col-form-label">Submission Type</label>
+                        </div>
+                        <div style="border: 1px rgb(175, 175, 175) solid; border-radius: 5px;" class="col-6">
+                            <div class="wd-form-margin">
+                                <select class="form-select wd-form-margin">
+                                    <option value="Percentage">Online</option>
+                                </select>
+                                Online Entry Options<br />
+
+                                <div class="form-check">
+                                    <input type="checkbox" value="TEXT" name="check-entry" id="chkbox-text" checked />
+                                    <label for="chkbox-text">Text Entry</label><br />
+                                    <input type="checkbox" value="WEB" name="check-entry" id="chkbox-web" checked />
+                                    <label for="chkbox-web">Website URL</label><br />
+                                    <input type="checkbox" value="MEDIA" name="check-entry" id="chkbox-media" />
+                                    <label for="chkbox-media">Media Recordings</label><br />
+                                    <input type="checkbox" value="ANNOTATION" name="check-entry"
+                                        id="chkbox-annotation" />
+                                    <label for="chkbox-annotation">Student Annotation</label><br />
+                                    <input type="checkbox" value="FILE" name="check-entry" id="chkbox-file" />
+                                    <label for="chkbox-file">File Uploads</label>
+                                </div>
+                            </div>
+                        </div><br />
+                        <div class="row mb-3 align-items-center " style="margin-top: 20px;">
+                            <div class="col-2  text-end">
+                                <label for="inputPassword6" class="col-form-label">Submission Attempts</label>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select">
+                                    <option value="Unlimited">Unlimited</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-2 text-end">
+                                <label for="inputPassword6" class="col-form-label">Plagiarism Review</label>
+                            </div>
+                            <div class="col-6">
+                                <select class="form-select">
+                                    <option value="None">None</option>
+                                    <option value="Check">Check</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-2  text-end">
+                                <label for="inputPassword6" class="col-form-label"> Group Assignment</label>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label for="flexCheckChecked">This is a group assignment</label>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-2  text-end">
+                                <label for="inputPassword6" class="col-form-label"> Peer Reviews</label>
+                            </div>
+                            <div class="col-6">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label for="flexCheckChecked">Require Peer Reviews</label>
+                            </div>
+                        </div>
+                        <div class="row mb-3 wd-form-margin">
+
+                            <div class="col-2  text-end" valign="top">
+                                <label for="inputPassword6" class="col-form-label">Assign</label>
+                            </div>
+                            <div class="col">
+                                <div class="card col-8">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="">Assign to</label> <br>
+                                            <input class="form-control col" type="text" class="form-control"
+                                                value="Everyone" />
+                                        </div>
+                                        <div class="row g-3 align-items-center  wd-form-margin">
+
+                                            <div class="col" style="align-items: center;">
+                                                <label for="due-date">Due</label><br>
+                                                <input class="form-control" id="due-date" name="date" value="2021-09-08"
+                                                    min="2021-09-04" max="2021-09-23" />
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="available-date">Available from</label><br>
+                                                        <input class="form-control" id="available-date" type="date"
+                                                            value="2021-09-08" min="2021-09-04" max="2021-09-23" />
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="end-date">Until</label><br>
+                                                        <input class="form-control" id="end-date" type="date"
+                                                            value="2021-09-08" min="2021-09-04" max="2021-09-23" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer" style="text-align: center;">
+                                        <a href="#" class="wd-link" style="color: black !important;">+ Add</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="checkbox" id="note" checked />
+                                <label for="note">Notify users that this content has changed</label>
+                            </div>
+                            <div class="col mb-2 float-end">
+        
+                                <a class="btn btn-secondary float-end" style="margin: 5px;" href="index.html"
+                                    role="button">Cancel</a>
+                                <a class="btn btn-danger float-end" style="margin: 5px;" href="index.html"
+                                    role="button">Save</a>
+        
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
