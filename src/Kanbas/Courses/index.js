@@ -19,7 +19,7 @@ import Grades from "./Grades";
 function Courses({ courses }) {
   const { courseId } = useParams();
   const [course, setCourse] = useState({});
-  const URL = "https://kanbas-node-server-app-iryf.onrender.com/api/courses";
+  const URL = "https://kanbas-node-server-app-1n6i.onrender.com/api/courses";
   const findCourseById = async (courseId) => {
     const response = await axios.get(`${URL}/${courseId}`);
     setCourse(response.data);

@@ -3,8 +3,8 @@ import axios from "axios";
 // const MODULES_URL = "http://localhost:4000/api/modules";
 // const MODULES_URL = 'https://kanbas-node-server-app-cs1234-sp23.onrender.com/api/modules';
 const API_BASE = process.env.REACT_APP_API_BASE;
-const COURSES_URL = `https://kanbas-node-server-app-iryf.onrender.com/api/courses`;
-const MODULES_URL = `https://kanbas-node-server-app-iryf.onrender.com/api/modules`;
+const COURSES_URL = `https://kanbas-node-server-app-1n6i.onrender.com/api/courses`;
+const MODULES_URL = `https://kanbas-node-server-app-1n6i.onrender.com/api/modules`;
 
 export const findModulesForCourse = async (courseId) => {
   const response = await axios

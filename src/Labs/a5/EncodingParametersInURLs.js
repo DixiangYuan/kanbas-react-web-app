@@ -6,17 +6,17 @@ function EncodingParametersInURLs() {
   const [result, setResult] = useState(0);
   const fetchSum = async (a, b) => {
     const response = await
-      axios.get(`https://kanbas-node-server-app-iryf.onrender.com/a5/add/${a}/${b}`);
+      axios.get(`https://kanbas-node-server-app-1n6i.onrender.com/a5/add/${a}/${b}`);
     setResult(response.data);
   };
   const fetchSubtraction = async (a, b) => {
     const response = await axios.get(
-      `https://kanbas-node-server-app-iryf.onrender.com/a5/subtract/${a}/${b}`);
+      `https://kanbas-node-server-app-1n6i.onrender.com/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
   const [welcome, setWelcome] = useState("Welcome Massage");
   const fetchWelcome = async () => {
-    const response = await axios.get("https://kanbas-node-server-app-iryf.onrender.com/a5/welcome");
+    const response = await axios.get("https://kanbas-node-server-app-1n6i.onrender.com/a5/welcome");
     setWelcome(response.data);
   };
   useEffect(() => {
@@ -50,21 +50,21 @@ function EncodingParametersInURLs() {
       </button>
       <h3>Path Parameters</h3>
       <a
-        href={`https://kanbas-node-server-app-iryf.onrender.com/a5/add/${a}/${b}`}
+        href={`https://kanbas-node-server-app-1n6i.onrender.com/a5/add/${a}/${b}`}
         className="btn btn-primary">
         Add {a} + {b}
       </a> <a
-        href={`https://kanbas-node-server-app-iryf.onrender.com/a5/subtract/${a}/${b}`}
+        href={`https://kanbas-node-server-app-1n6i.onrender.com/a5/subtract/${a}/${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
       <h3>Query Parameters</h3>
       <a
-        href={`https://kanbas-node-server-app-iryf.onrender.com/a5/calculator?operation=add&a=${a}&b=${b}`}
+        href={`https://kanbas-node-server-app-1n6i.onrender.com/a5/calculator?operation=add&a=${a}&b=${b}`}
         className="btn btn-primary">
         Add {a} + {b}
       </a> <a
-        href={`https://kanbas-node-server-app-iryf.onrender.com/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`https://kanbas-node-server-app-1n6i.onrender.com/a5/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>

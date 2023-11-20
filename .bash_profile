@@ -1,1 +1,1 @@
-export REACT_APP_API_BASE=https://kanbas-node-server-app-iryf.onrender.com/api/
+export REACT_APP_API_BASE=https://kanbas-node-server-app-1n6i.onrender.com/
