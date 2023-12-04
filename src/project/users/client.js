@@ -1,5 +1,6 @@
 import axios from "axios";
-export const BASE_API = `https://a6-node-server-app-8h5k.onrender.com`;
+export const BASE_API = process.env.BASE_API;
+// export const BASE_API = `http://localhost:4000`;
 console.log(BASE_API);
 export const USERS_API = `${BASE_API}/api/users`;
 
