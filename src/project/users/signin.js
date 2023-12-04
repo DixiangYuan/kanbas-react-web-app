@@ -26,16 +26,16 @@ function Signin() {
 
   return (
     <div>
-      <div class="login-page">
-        <div class="form">
-          <div class="login">
-            <div class="login-header">
+      <div className="login-page">
+        <div className="form">
+          <div className="login">
+            <div className="login-header">
               <h2><img src="YalpLogo.jpg" />Log In</h2>
               <p>Please enter your credentials to log in.</p>
             </div>
           </div>
           {error && <div className="alert alert-danger">{error.message}</div>}
-          <form class="login-form">
+          <form className="login-form">
             <input
               type="text"
               placeholder="username"
@@ -51,7 +51,7 @@ function Signin() {
             <button className="btn btn-primary" onClick={signin}>
               Sign in
             </button>
-            <p class="message">Not registered?<Link to="/project/signup"
+            <p className="message">Not registered?<Link to="/project/signup"
             className={`nav-link`}>Create an account</Link>
           </p>
           </form>

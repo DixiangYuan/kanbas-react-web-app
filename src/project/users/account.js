@@ -39,9 +39,9 @@ function Account() {
 
   return (
     <div>
-      <div class="login-page">
-      <div class="form">
-      <div class="login-header">
+      <div className="login-page">
+      <div className="form">
+      <div className="login-header">
         <h1>Account Information</h1>
         </div>
         {account && (

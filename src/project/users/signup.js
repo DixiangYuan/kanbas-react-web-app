@@ -20,16 +20,16 @@ function Signup() {
   };
   return (
     <div>
-      <div class="login-page">
-        <div class="form">
-          <div class="login">
-            <div class="login-header">
+      <div className="login-page">
+        <div className="form">
+          <div className="login">
+            <div className="login-header">
               <h2>Sign Up</h2>
               <p>Please enter your credentials to sign up.</p>
             </div>
           </div>
           {error && <div className="alert alert-danger">{error}</div>}
-          <form class="login-form">
+          <form className="login-form">
             <input
               type="text"
               placeholder="username"
@@ -55,7 +55,7 @@ function Signup() {
             <button className="btn btn-primary" onClick={signup}>
               Sign up
             </button>
-            <p class="message">Already have an account? <Link to="/project/signin"
+            <p className="message">Already have an account? <Link to="/project/signin"
           className={`nav-link`}>Log in</Link></p>
           </form>
         </div>
