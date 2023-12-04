@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
+import { wait } from "@testing-library/user-event/dist/utils";
 
 function Signin() {
   const [username, setUsername] = useState("");
@@ -11,16 +12,19 @@ function Signin() {
 
   const navigate = useNavigate();
 
-  const signin = async () => {
+  const signin = async (event) => {
     try {
+      event.preventDefault()
       const credentials = { username: username, password: password };
       console.log({ username });
       console.log({ password });
-      const user = await client.signin(credentials);
+      const user = await client.signin(credentials)
       console.log({ user });
+      console.log("here load")
       navigate("/project/account");
     } catch (error) {
-      setError(error);
+      console.log(error)
+      // setError(error);
     }
   };
 
