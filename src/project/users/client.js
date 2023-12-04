@@ -19,7 +19,7 @@ export const updateUser = async (id, user) => {
 };
 
 export const account = async () => {
-  const response = await request.post(`${USERS_API}/account`);
+  const response = await request.get(`${USERS_API}/account`);
   return response.data;
 };
 
