@@ -5,8 +5,7 @@ console.log(BASE_API);
 export const USERS_API = `${BASE_API}/api/users`;
 
 const request = axios.create({
-  withCredentials: true,
-  proxy:false
+  withCredentials: true
 });
 
 export const signin = async (credentials) => {
